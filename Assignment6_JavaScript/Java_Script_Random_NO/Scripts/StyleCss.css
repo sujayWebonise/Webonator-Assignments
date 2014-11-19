@@ -1,0 +1,25 @@
+﻿        td {
+            
+            text-align:center;
+            background-color:#ccc;
+            border: thick solid #eee;
+    
+        }
+        th {
+            text-align:center;
+            width:100px
+            
+        }
+        
+       
+        
+        table {
+            
+            height:300px;
+            width:300px;
+            border: thick solid #eee;
+            /*border-collapse:initial;*/
+            border-spacing:0px
+               
+        }
+   

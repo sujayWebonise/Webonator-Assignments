@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="/home/webonise/Desktop/java script assignment1/mystyle.css">
+</head>
+
+<body>
+<nav>
+<p id="demo"></p>
+Equation <input type=input id=equation>
+<br>
+In bound<input type=input id=inbound>
+<br>
+Out bound<input type=input id=outbound>
+<br>
+Steps<br><input type=input id=step>
+<br>
+<input type=submit text=submit onclick="equation_regx()">
+</nav>
+<input type=input id=y1>
+<input type=input id=y2>
+<section>
+</section>
+<canvas id="myCanvas" width="500" height="500" style="border:1px solid #000000;">
+</canvas>
+
+
+<script src="/home/webonise/Desktop/java script assignment1/script.js">
+</script>
+
+
+
+
+
+
+</body>
+</html>
+
