@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_ITA2cGl3EeSFKKZeJ4fsuA" name="Design Patterns">
+  <elementImport xmi:id="_ITySgGl3EeSFKKZeJ4fsuA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+  </elementImport>
+  <elementImport xmi:id="_IT0uwGl3EeSFKKZeJ4fsuA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_IT0uwWl3EeSFKKZeJ4fsuA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#UnlimitedNatural"/>
+  </elementImport>
+  <elementImport xmi:id="_IT0uwml3EeSFKKZeJ4fsuA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Lj4KQGl3EeSFKKZeJ4fsuA" name="User">
+    <ownedAttribute xmi:id="_N7I8kGl3EeSFKKZeJ4fsuA" name="User name" aggregation="composite"/>
+    <ownedAttribute xmi:id="_QP-tAGl3EeSFKKZeJ4fsuA" name="Password" aggregation="composite"/>
+    <ownedAttribute xmi:id="_ZDAo4Gl3EeSFKKZeJ4fsuA" name="Name" aggregation="composite"/>
+    <ownedAttribute xmi:id="_cFWYgGl3EeSFKKZeJ4fsuA" name="Email" aggregation="composite"/>
+    <ownedOperation xmi:id="_RVtmAGl3EeSFKKZeJ4fsuA" name="Log IN">
+      <ownedParameter xmi:id="_Sf9LkGl3EeSFKKZeJ4fsuA" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_U1qesGl3EeSFKKZeJ4fsuA" name="Student">
+    <generalization xmi:id="_lZECwGl7EeSFKKZeJ4fsuA" general="_Lj4KQGl3EeSFKKZeJ4fsuA"/>
+    <generalization xmi:id="_4QX_oGl-EeSFKKZeJ4fsuA" general="_upGqwGl7EeSFKKZeJ4fsuA"/>
+    <ownedOperation xmi:id="_hdMm8Gl3EeSFKKZeJ4fsuA" name="Register">
+      <ownedParameter xmi:id="_k4PxgGl3EeSFKKZeJ4fsuA" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_e7GdoGl3EeSFKKZeJ4fsuA" name="Manager">
+    <generalization xmi:id="_0bsJ4Gl6EeSFKKZeJ4fsuA" general="_kw2osGl6EeSFKKZeJ4fsuA"/>
+    <generalization xmi:id="_ngK5MGl7EeSFKKZeJ4fsuA" general="_Lj4KQGl3EeSFKKZeJ4fsuA"/>
+    <generalization xmi:id="_5mNKIGl-EeSFKKZeJ4fsuA" general="_upGqwGl7EeSFKKZeJ4fsuA"/>
+    <ownedOperation xmi:id="_oyA4YGl3EeSFKKZeJ4fsuA" name="Update Syllabi">
+      <ownedParameter xmi:id="_rkZgcGl3EeSFKKZeJ4fsuA" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_r2FtYGl3EeSFKKZeJ4fsuA" name="Update Fee">
+      <ownedParameter xmi:id="_yMSacGl3EeSFKKZeJ4fsuA" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_kw2osGl6EeSFKKZeJ4fsuA" name="Database">
+    <generalization xmi:id="_GdaC4Gl7EeSFKKZeJ4fsuA" general="_kw2osGl6EeSFKKZeJ4fsuA"/>
+    <ownedAttribute xmi:id="_LwSRwGl7EeSFKKZeJ4fsuA" name="Single Object" visibility="private" aggregation="composite"/>
+    <ownedOperation xmi:id="_SLDVwGl7EeSFKKZeJ4fsuA" name="Single object" visibility="private">
+      <ownedParameter xmi:id="_iDJ24Gl7EeSFKKZeJ4fsuA" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_gtQlgGl8EeSFKKZeJ4fsuA" name="Get data">
+      <ownedParameter xmi:id="_jFPwkGl8EeSFKKZeJ4fsuA" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_upGqwGl7EeSFKKZeJ4fsuA" name="Courses">
+    <ownedAttribute xmi:id="_Uw1aUGl9EeSFKKZeJ4fsuA" name="Fee" visibility="private" aggregation="composite"/>
+    <ownedAttribute xmi:id="_V8riYGl9EeSFKKZeJ4fsuA" name="Syllabus" visibility="private" aggregation="composite"/>
+    <ownedOperation xmi:id="_XyBTYGl9EeSFKKZeJ4fsuA" name="Get Fee Structure">
+      <ownedParameter xmi:id="_l1X5YGl9EeSFKKZeJ4fsuA" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_mTf_0Gl9EeSFKKZeJ4fsuA" name="Get Syllabus">
+      <ownedParameter xmi:id="_tsmUUGl9EeSFKKZeJ4fsuA" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_qXbIQGl9EeSFKKZeJ4fsuA" name="Get Courses">
+      <ownedParameter xmi:id="_s9JNUGl9EeSFKKZeJ4fsuA" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_9aYtwGl7EeSFKKZeJ4fsuA" name="BE">
+    <generalization xmi:id="_QqSRIGl8EeSFKKZeJ4fsuA" general="_upGqwGl7EeSFKKZeJ4fsuA"/>
+    <ownedAttribute xmi:id="_nJozEGl8EeSFKKZeJ4fsuA" name="Deparment" visibility="private" aggregation="composite"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_AO5cwGl8EeSFKKZeJ4fsuA" name="MBA">
+    <generalization xmi:id="_SOsDIGl8EeSFKKZeJ4fsuA" general="_upGqwGl7EeSFKKZeJ4fsuA"/>
+    <ownedAttribute xmi:id="_2jG3cGl8EeSFKKZeJ4fsuA" name="Department" visibility="private" aggregation="composite"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Js5oQGl8EeSFKKZeJ4fsuA" name="LAW">
+    <generalization xmi:id="_Tc90IGl8EeSFKKZeJ4fsuA" general="_upGqwGl7EeSFKKZeJ4fsuA"/>
+    <ownedOperation xmi:id="_PZce4Gl9EeSFKKZeJ4fsuA" name="operation"/>
+  </packagedElement>
+</uml:Package>
