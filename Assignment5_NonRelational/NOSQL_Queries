@@ -1,0 +1,51 @@
+DATABASE SCHEMA
+
+
+users{
+	"id":int,
+	"name":String,
+	"email":String,
+	"password":String,
+	"Assessment":{
+			"id":int,
+			"name":String,
+			"min_marks":int,
+			"max_marks":int,
+			"duration":int,
+			"score_count":int,
+			"question":{
+					"id":int,
+					"contents":String,
+					"answer":{
+						    "user_ans":String,
+						    "correct_ans":String,
+						    "options":{	
+							    "option_id":String,
+							    "option_content":String
+							      }
+						    
+						 }
+				   }
+			
+		     }
+`     }
+						
+			
+
+INSERT OPERATION
+
+db.users.save({ "id":"1", "name":"sujay", "email":"sujay.gavhaen@gmail.com", "password":"password", "assessment": {  "id":"1", "name":"MONGODB", "min_marks":"2", "max_marks":"4", "duration":"1", "score_count":"1", "questions": {  "id":"1", "content":"Type of db", "answer": {  "user_ans":"1","correct_answer":"1", "options": {  "option_id":"1", "option_content":"NONRELATIONAL", "option_id":"2", "option_content":"RELATIONAL" }  } }  } })
+
+
+INSERTION AT SPECIFIC DOCCUMENT
+ db.users.assessment.questions.answer.options.insert({"option_id":"1","option_content":"NON RELATIONAL"})
+
+
+FINDIND SPECIFINC KEY VALUE
+db.users.assessment.questions.answer.options.find({"option_id" : "1"})
+
+
+UPDATING A KEY VALUE
+db.users.update({"_id" : ObjectId("546746a068ea50e4f5609535")},{"name":"Deepak"})
+
+

@@ -1,0 +1,30 @@
+users{
+	"id":int,
+	"name":String,
+	"email":String,
+	"password":String,
+	"Assessment":{
+			"id":int,
+			"name":String,
+			"min_marks":int,
+			"max_marks":int,
+			"duration":int,
+			"score_count":int,
+			"question":{
+					"id":int,
+					"contents":String,
+					"answer":{
+						    "user_ans":String,
+						    "correct_ans":String,
+						    "options":{	
+							    "option_id":String,
+							    "option_content":String
+							      }
+						    
+						 }
+				   }
+			
+		     }
+`     }
+						
+	

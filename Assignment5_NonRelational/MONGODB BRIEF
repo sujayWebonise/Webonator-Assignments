@@ -1,0 +1,9 @@
+
+About MongoDB
+     
+	MongoDB is a NoSQL database,So there are no tables present in MongoDB.All that is present in MongoDB is Collections,Documents,Key and their values.Collections are like Databases in RDBMS,Documents are like tables and key values are like columns and rows.
+	When there is a large size of database MongoDB is best solution for it as it faster than RDBMS databases.Because quering to a database is very easy by using 
+find() function and very flexible.
+	Insertion of data is also very easy by using insert() or save() function.
+	We can remove the data from it by using remove() function.
+	Whenever you create new collection it creates unique object id so that you can have reference of that collection and access the documents of collection.So MongoDB is best when there is large size of databases.	  
