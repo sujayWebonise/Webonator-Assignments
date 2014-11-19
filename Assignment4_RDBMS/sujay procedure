@@ -1,0 +1,17 @@
+PROCEDURE
+
+CREATE PROCEDURE PIVOT() 
+BEGIN 
+
+select u.id as user_id,a.id as assessment_id,MAX(case when q.id='1' then ga.user_answer end) '1+2',MAX(case when q.id='2' then ga.user_answer end) '4*2',MAX(case when q.id='which one of the following is conditional statement?' then ga.user_answer end) 'which one of the following is conditional statement?' from users u,questions q,assessment_mapping am,assessments a,given_assessments ga,options o where u.id=ga.id AND ga.assess_map_id=am.id And am.asswssmwnt_id=a.id AND am.option_id=o.id group by u.id; 
+
+END
+
+
++---------+---------------+------+------+------------------------------------------------------+
+| user_id | assessment_id | 1+2  | 4*2  | which one of the following is conditional statement? |
++---------+---------------+------+------+------------------------------------------------------+
+|       1 |             1 |    3 |    3 |                                                 NULL |
+|       2 |             1 |    7 |    7 |                                                 NULL |
+|       3 |             3 |    9 |    9 |                                                 NULL |
++---------+---------------+------+------+------------------------------------------------------+
