@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_ITA2cGl3EeSFKKZeJ4fsuA" name="Design Patterns">
+  <elementImport xmi:id="_ITySgGl3EeSFKKZeJ4fsuA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+  </elementImport>
+  <elementImport xmi:id="_IT0uwGl3EeSFKKZeJ4fsuA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_IT0uwWl3EeSFKKZeJ4fsuA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#UnlimitedNatural"/>
+  </elementImport>
+  <elementImport xmi:id="_IT0uwml3EeSFKKZeJ4fsuA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Lj4KQGl3EeSFKKZeJ4fsuA" name="User">
+    <ownedAttribute xmi:id="_N7I8kGl3EeSFKKZeJ4fsuA" name="User name" aggregation="composite">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_QP-tAGl3EeSFKKZeJ4fsuA" name="Password" aggregation="composite">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_ZDAo4Gl3EeSFKKZeJ4fsuA" name="Name" aggregation="composite">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_cFWYgGl3EeSFKKZeJ4fsuA" name="Email" aggregation="composite">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_RVtmAGl3EeSFKKZeJ4fsuA" name="Log IN">
+      <ownedParameter xmi:id="_Sf9LkGl3EeSFKKZeJ4fsuA" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_U1qesGl3EeSFKKZeJ4fsuA" name="Student">
+    <generalization xmi:id="_lZECwGl7EeSFKKZeJ4fsuA" general="_Lj4KQGl3EeSFKKZeJ4fsuA"/>
+    <ownedAttribute xmi:id="_1RlswGmeEeSfk9bURT6-Bg" name="Education" aggregation="composite">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_UlklsGmiEeSfk9bURT6-Bg" name="Course" aggregation="composite">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_ZHBXoGmiEeSfk9bURT6-Bg" name="Age" aggregation="composite"/>
+    <ownedOperation xmi:id="_hdMm8Gl3EeSFKKZeJ4fsuA" name="Register">
+      <ownedParameter xmi:id="_k4PxgGl3EeSFKKZeJ4fsuA" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_fEEEMGmqEeSfk9bURT6-Bg" name="GetBooks">
+      <ownedParameter xmi:id="_ipGRMGmqEeSfk9bURT6-Bg" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_e7GdoGl3EeSFKKZeJ4fsuA" name="Database handler">
+    <generalization xmi:id="_ngK5MGl7EeSFKKZeJ4fsuA" general="_Lj4KQGl3EeSFKKZeJ4fsuA"/>
+    <generalization xmi:id="_bf1PoGmCEeSfk9bURT6-Bg" general="_upGqwGl7EeSFKKZeJ4fsuA"/>
+    <generalization xmi:id="_fZdzoGmCEeSfk9bURT6-Bg" general="_kw2osGl6EeSFKKZeJ4fsuA"/>
+    <ownedOperation xmi:id="_oyA4YGl3EeSFKKZeJ4fsuA" name="Update Syllabi">
+      <ownedParameter xmi:id="_rkZgcGl3EeSFKKZeJ4fsuA" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_r2FtYGl3EeSFKKZeJ4fsuA" name="Update Fee">
+      <ownedParameter xmi:id="_yMSacGl3EeSFKKZeJ4fsuA" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_1YhA4GmuEeSfk9bURT6-Bg" name="AddCourse">
+      <ownedParameter xmi:id="_3sTocGmuEeSfk9bURT6-Bg" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_kw2osGl6EeSFKKZeJ4fsuA" name="Database">
+    <generalization xmi:id="_GdaC4Gl7EeSFKKZeJ4fsuA" general="_kw2osGl6EeSFKKZeJ4fsuA"/>
+    <ownedAttribute xmi:id="_LwSRwGl7EeSFKKZeJ4fsuA" name="Single Object" visibility="private" aggregation="composite"/>
+    <ownedOperation xmi:id="_SLDVwGl7EeSFKKZeJ4fsuA" name="Single object" visibility="private">
+      <ownedParameter xmi:id="_iDJ24Gl7EeSFKKZeJ4fsuA" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_dR4gQGl7EeSFKKZeJ4fsuA" name="Get Data">
+      <ownedParameter xmi:id="_i7JO0Gl7EeSFKKZeJ4fsuA" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_upGqwGl7EeSFKKZeJ4fsuA" name="Courses">
+    <ownedAttribute xmi:id="_y7uu0GmBEeSfk9bURT6-Bg" name="Courses" aggregation="composite"/>
+    <ownedAttribute xmi:id="_5ICgEGmBEeSfk9bURT6-Bg" name="Fees" aggregation="composite"/>
+    <ownedAttribute xmi:id="_7Mx_AGmBEeSfk9bURT6-Bg" name="Syllabus" aggregation="composite"/>
+    <ownedOperation xmi:id="_8O7YgGmBEeSfk9bURT6-Bg" name="Get Fees">
+      <ownedParameter xmi:id="_-g-6sGmBEeSfk9bURT6-Bg" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_-xrCEGmBEeSfk9bURT6-Bg" name="Get syllabus">
+      <ownedParameter xmi:id="_CozrsGmCEeSfk9bURT6-Bg" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_6XYagGmhEeSfk9bURT6-Bg" name="Register">
+      <ownedParameter xmi:id="_8XvIsGmhEeSfk9bURT6-Bg" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_9aYtwGl7EeSFKKZeJ4fsuA" name="BE">
+    <generalization xmi:id="_QqSRIGl8EeSFKKZeJ4fsuA" general="_upGqwGl7EeSFKKZeJ4fsuA"/>
+    <ownedAttribute xmi:id="_FuAiEGmCEeSfk9bURT6-Bg" name="DepartmentName" aggregation="composite"/>
+    <ownedAttribute xmi:id="_oHjBcGmrEeSfk9bURT6-Bg" name="DepartmentID" aggregation="composite"/>
+    <ownedOperation xmi:id="_Ls7XkGmCEeSfk9bURT6-Bg" name="Get Department">
+      <ownedParameter xmi:id="_OUw8gGmCEeSfk9bURT6-Bg" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_AO5cwGl8EeSFKKZeJ4fsuA" name="MBA">
+    <generalization xmi:id="_SOsDIGl8EeSFKKZeJ4fsuA" general="_upGqwGl7EeSFKKZeJ4fsuA"/>
+    <ownedAttribute xmi:id="_HeTbAGmCEeSfk9bURT6-Bg" name="CourseName" aggregation="composite"/>
+    <ownedAttribute xmi:id="_VwXWIGmoEeSfk9bURT6-Bg" name="CourseID" aggregation="composite"/>
+    <ownedOperation xmi:id="_Jr-zgGmCEeSfk9bURT6-Bg" name="Get department">
+      <ownedParameter xmi:id="_LFHJoGmCEeSfk9bURT6-Bg" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Js5oQGl8EeSFKKZeJ4fsuA" name="LAW">
+    <generalization xmi:id="_Tc90IGl8EeSFKKZeJ4fsuA" general="_upGqwGl7EeSFKKZeJ4fsuA"/>
+    <ownedAttribute xmi:id="_rHM-kGmtEeSfk9bURT6-Bg" name="Course Name" aggregation="composite"/>
+    <ownedAttribute xmi:id="_zNd7EGmtEeSfk9bURT6-Bg" name="CourseID" aggregation="composite"/>
+    <ownedOperation xmi:id="_DKDosGmwEeSfk9bURT6-Bg" name="GetCourse">
+      <ownedParameter xmi:id="_E4drQGmwEeSfk9bURT6-Bg" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_f1mWAGmCEeSfk9bURT6-Bg" name="dependency"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_oLmBgGmLEeSfk9bURT6-Bg" name="Librarian">
+    <ownedAttribute xmi:id="_q5l40GmLEeSfk9bURT6-Bg" name="Name" aggregation="composite">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_hbyDIGmiEeSfk9bURT6-Bg" name="ID" aggregation="composite"/>
+    <ownedOperation xmi:id="_vQwGUGmLEeSfk9bURT6-Bg" name="Issue Books">
+      <ownedParameter xmi:id="_wt6A0GmLEeSfk9bURT6-Bg" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_xA-t0GmLEeSfk9bURT6-Bg" name="Search Books">
+      <ownedParameter xmi:id="_zu66wGmLEeSfk9bURT6-Bg" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_19NXQGmLEeSfk9bURT6-Bg" name="Verify Membership">
+      <ownedParameter xmi:id="_4b1V0GmLEeSfk9bURT6-Bg" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_mUy9UGmeEeSfk9bURT6-Bg" name="Get Bill">
+      <ownedParameter xmi:id="_nvbvUGmeEeSfk9bURT6-Bg" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_GvwCMGmeEeSfk9bURT6-Bg" name="Book">
+    <ownedAttribute xmi:id="_IVLu8GmeEeSfk9bURT6-Bg" name="Name" aggregation="composite">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_OGvd4GmeEeSfk9bURT6-Bg" name="Auther" aggregation="composite">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_V5Pw4GmeEeSfk9bURT6-Bg" name="Status" aggregation="composite">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_YFT_0GmeEeSfk9bURT6-Bg" name="edition" aggregation="composite">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_easQsGmiEeSfk9bURT6-Bg" name="Prince" aggregation="composite"/>
+    <ownedOperation xmi:id="_eNeQ4GmeEeSfk9bURT6-Bg" name="Get Book Details">
+      <ownedParameter xmi:id="_gyz7cGmeEeSfk9bURT6-Bg" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_T0WEcGmfEeSfk9bURT6-Bg" name="Bill">
+    <ownedAttribute xmi:id="_VD0IQGmfEeSfk9bURT6-Bg" name="Bill no" aggregation="composite"/>
+    <ownedAttribute xmi:id="_XWhxwGmfEeSfk9bURT6-Bg" name="Date" aggregation="composite"/>
+    <ownedAttribute xmi:id="_bzBLMGmfEeSfk9bURT6-Bg" name="Member" aggregation="composite"/>
+    <ownedAttribute xmi:id="_c8LysGmfEeSfk9bURT6-Bg" name="Amount" aggregation="composite"/>
+    <ownedOperation xmi:id="_dtxnsGmfEeSfk9bURT6-Bg" name="BillCreate">
+      <ownedParameter xmi:id="_hVeuMGmfEeSfk9bURT6-Bg" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_t41u0GmkEeSfk9bURT6-Bg" name="Library">
+    <generalization xmi:id="_qPjXIGmoEeSfk9bURT6-Bg" general="_GvwCMGmeEeSfk9bURT6-Bg"/>
+    <generalization xmi:id="_r2PoIGmoEeSfk9bURT6-Bg" general="_T0WEcGmfEeSfk9bURT6-Bg"/>
+    <generalization xmi:id="_PaEtAGmpEeSfk9bURT6-Bg" general="_uKpTsGmoEeSfk9bURT6-Bg"/>
+    <ownedAttribute xmi:id="_QNIpAGmmEeSfk9bURT6-Bg" name="members" aggregation="composite">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_TV0RMGmmEeSfk9bURT6-Bg" name="Books" aggregation="composite">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_eRBvoGmoEeSfk9bURT6-Bg" memberEnd="_eRBvoWmoEeSfk9bURT6-Bg _eRCWsmmoEeSfk9bURT6-Bg">
+    <ownedEnd xmi:id="_eRBvoWmoEeSfk9bURT6-Bg" name="src" type="_oLmBgGmLEeSfk9bURT6-Bg" association="_eRBvoGmoEeSfk9bURT6-Bg">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eRCWsWmoEeSfk9bURT6-Bg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eRCWsGmoEeSfk9bURT6-Bg" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_eRCWsmmoEeSfk9bURT6-Bg" name="dst" type="_t41u0GmkEeSfk9bURT6-Bg" association="_eRBvoGmoEeSfk9bURT6-Bg">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eRC9wGmoEeSfk9bURT6-Bg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eRCWs2moEeSfk9bURT6-Bg" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_uKpTsGmoEeSfk9bURT6-Bg" name="Ebooks">
+    <ownedAttribute xmi:id="_wtWhAGmoEeSfk9bURT6-Bg" name="Name" aggregation="composite"/>
+    <ownedAttribute xmi:id="_yKWDcGmoEeSfk9bURT6-Bg" name="Auther" aggregation="composite"/>
+    <ownedAttribute xmi:id="_4zBAkGmoEeSfk9bURT6-Bg" name="Edition" aggregation="composite"/>
+    <ownedAttribute xmi:id="_-SlAkGmoEeSfk9bURT6-Bg" name="Fees" aggregation="composite"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_juUz4GmqEeSfk9bURT6-Bg" name="Student Section">
+    <ownedAttribute xmi:id="_82aSoGmqEeSfk9bURT6-Bg" name="Name" aggregation="composite"/>
+    <ownedAttribute xmi:id="_-n76oGmqEeSfk9bURT6-Bg" name="Course" aggregation="composite"/>
+    <ownedAttribute xmi:id="_A4SMoGmrEeSfk9bURT6-Bg" name="Year" aggregation="composite"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_uGUicGmqEeSfk9bURT6-Bg" name="Doccuments">
+    <generalization xmi:id="_FF6DoGmrEeSfk9bURT6-Bg" general="_juUz4GmqEeSfk9bURT6-Bg"/>
+    <ownedAttribute xmi:id="_NTVYEGmrEeSfk9bURT6-Bg" name="Type" aggregation="composite"/>
+    <ownedOperation xmi:id="_VlpzkGmrEeSfk9bURT6-Bg" name="GetDoccument">
+      <ownedParameter xmi:id="_YPPsAGmrEeSfk9bURT6-Bg" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_wAtykGmqEeSfk9bURT6-Bg" name="Scholership">
+    <generalization xmi:id="_GZ6CIGmrEeSfk9bURT6-Bg" general="_juUz4GmqEeSfk9bURT6-Bg"/>
+    <ownedAttribute xmi:id="_UKjukGmrEeSfk9bURT6-Bg" name="Type" aggregation="composite"/>
+    <ownedOperation xmi:id="_Y0egAGmrEeSfk9bURT6-Bg" name="GetScholership">
+      <ownedParameter xmi:id="_cgh7AGmrEeSfk9bURT6-Bg" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_e45gkGmrEeSfk9bURT6-Bg" memberEnd="_e45gkWmrEeSfk9bURT6-Bg _e46HommrEeSfk9bURT6-Bg">
+    <ownedEnd xmi:id="_e45gkWmrEeSfk9bURT6-Bg" name="src" type="_U1qesGl3EeSFKKZeJ4fsuA" association="_e45gkGmrEeSfk9bURT6-Bg">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_e46HoWmrEeSfk9bURT6-Bg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_e46HoGmrEeSfk9bURT6-Bg" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_e46HommrEeSfk9bURT6-Bg" name="dst" type="_oLmBgGmLEeSfk9bURT6-Bg" association="_e45gkGmrEeSfk9bURT6-Bg">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_e46HpGmrEeSfk9bURT6-Bg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_e46Ho2mrEeSfk9bURT6-Bg" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_f8lLIGmrEeSfk9bURT6-Bg" memberEnd="_f8lLIWmrEeSfk9bURT6-Bg _f8lyMmmrEeSfk9bURT6-Bg">
+    <ownedEnd xmi:id="_f8lLIWmrEeSfk9bURT6-Bg" name="src" type="_U1qesGl3EeSFKKZeJ4fsuA" association="_f8lLIGmrEeSfk9bURT6-Bg">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_f8lyMWmrEeSfk9bURT6-Bg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_f8lyMGmrEeSfk9bURT6-Bg" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_f8lyMmmrEeSfk9bURT6-Bg" name="dst" type="_juUz4GmqEeSfk9bURT6-Bg" association="_f8lLIGmrEeSfk9bURT6-Bg">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_f8mZQGmrEeSfk9bURT6-Bg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_f8lyM2mrEeSfk9bURT6-Bg" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_hlx9kGmrEeSfk9bURT6-Bg" memberEnd="_hlx9kWmrEeSfk9bURT6-Bg _hlykoWmrEeSfk9bURT6-Bg">
+    <ownedEnd xmi:id="_hlx9kWmrEeSfk9bURT6-Bg" name="src" type="_U1qesGl3EeSFKKZeJ4fsuA" association="_hlx9kGmrEeSfk9bURT6-Bg">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hlykoGmrEeSfk9bURT6-Bg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hlx9kmmrEeSfk9bURT6-Bg" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_hlykoWmrEeSfk9bURT6-Bg" name="dst" type="_upGqwGl7EeSFKKZeJ4fsuA" association="_hlx9kGmrEeSfk9bURT6-Bg">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hlyko2mrEeSfk9bURT6-Bg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hlykommrEeSfk9bURT6-Bg" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+</uml:Package>
