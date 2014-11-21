@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "rename all files Starting with letter x In Directory=" $(rename -v 's/^(x.{2})/$1-renamed-/' *.* >> assignment.log)
+date +'%c|Backup started' >> assignment.log
+echo "rename all files In Directory=" $(rename -v 's/^(.{2})/$1-renamed-/' *.txt >> assignment.log)
+date +'%c|Backup started' >> assignment.log

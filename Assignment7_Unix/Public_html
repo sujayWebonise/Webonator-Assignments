@@ -1,0 +1,5 @@
+#!/bin/bash
+mkdir -p public_html
+chmod 777 readme.txt
+mv readme.txt public_html
+

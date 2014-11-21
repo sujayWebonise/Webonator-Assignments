@@ -1,0 +1,5 @@
+#!/bin/bash
+cp -a public_html public_html
+cd public_html
+#rename -v 's/^(.{2})/$1-renamed-/' *
+echo $(mv public_html public_html_renamed)
