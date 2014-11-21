@@ -1,0 +1,9 @@
+#!/bin/bash
+echo "storing to assignment.log" >> assignment.log
+echo "Host Name Is =" $HOSTNAME >> assignment.log
+echo "\nType and Version using CAT Command="$(cat /etc/issue.net) >> assignment.log
+echo "\nVersion And Type Of System ="  $(lsb_release -a) >> assignment.log
+echo "\nFull Path OF home Directory =" $PWD >> assignment.log
+echo "\nUser loged in to System =" $(who -a) >> assignment.log
+echo "\nListing all Files Oh home Directory And Its Sub Directories=" $(find $HOME -iname '*.*') >> assignment.log
+date +'%c|Backup started' >> assignment.log
