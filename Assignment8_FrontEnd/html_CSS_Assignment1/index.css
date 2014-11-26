@@ -1,0 +1,89 @@
+#header
+{
+
+	height: 101px;
+	width: 940px;
+	background-color: #499bd7;
+	color: white;
+	font-family: Arial;
+	font-size: 30px;
+	text-align:center;	
+	padding-top:76px;
+	
+}
+
+#menu_header
+{
+	height: 50px;
+	width: 858px;
+	font-family:Arial;
+	font-size: 14px;
+	color:#333333;
+	background-color: #d6d6d6;
+	padding-left: 82px;
+	padding-top: 10px;
+		
+}
+
+
+#windows_image
+{
+	
+	float: left;
+}
+ 
+
+#content
+{
+	font-family:Arial;
+	font-size: 14px;
+	padding-top: 29px;
+	padding-left: 80px;
+	padding-right:80px;
+	padding-bottom:41px;
+}
+
+#main_body
+{
+	padding-left:330px;
+	height: 462px;
+	width: 940px;
+	background-color:#ffffff;
+}
+#image
+{
+	padding-top:29px;
+	padding-left:82px;
+	padding-right:12px;
+	float: left;
+	
+}
+
+
+#footer
+{
+	height: 50px;
+	width: 858px;
+	background-color: #eeeeee;
+	padding-top:15px;
+	padding-left: 80px;
+	font-family:Arial;
+	font-size: 12px;
+	
+		
+}
+ul
+{
+padding-left:0;
+}
+
+li
+{
+	display:inline;
+}
+#copyright
+{
+float:right;
+padding-right: 80px;
+
+}
