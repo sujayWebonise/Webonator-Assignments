@@ -10,6 +10,7 @@
 	}
 	#head
 	{
+		font-family:Arial,Helvetica,sans-serif;
 		height: 50px;
 		background-color: #444444;
 		line-height:54px;			
@@ -41,7 +42,7 @@
 	}
 	#banner
 	{
-		
+		font-family:Arial,Helvetica,sans-serif;
 		height: 484px;
 
 	}
@@ -115,6 +116,10 @@
 		margin-top:20px;
 		margin-right:60px;
 		margin-left:30px
+	}
+	#body
+	{
+		font-family:Arial,Helvetica,sans-serif;
 	}
 	.circles
 	{
