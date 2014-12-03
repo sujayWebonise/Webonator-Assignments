@@ -25,7 +25,7 @@
 	a.logo
 	{
 		float: left;
-		margin-right:66px;
+		margin-right:43px;
 		margin-top: 6px;
 		background-image: url("../images/logo_ramoji.png");
 		background-repeat: no-repeat;
@@ -38,15 +38,17 @@
 		list-style-type: none;
 		margin-top: 18px;
 		margin-bottom: 19px;
+
 	}
 	.navigation li
 	{
 		float: left;
+		margin-right: 30px;
 	}
-	#header a
+	.navigation a
 	{
 		display: block;
-		margin-right: 25px;
+		
 		color: #000000;
 	}
 	.social
@@ -59,7 +61,21 @@
 	.social li 
 	{
 		float: right;
+		margin-right: 5px;
+	}
+	.facebook
+	{
 		
+		background-image: url("../images/facebook2.png");
+		background-repeat: no-repeat;
+		width: 15px;
+		height: 15px;
+	}
+	.circle
+	{
+		border-radius: 25px;
+		width: 19px;
+		background-color: #000;
 	}
 	a
 	{
@@ -68,46 +84,83 @@
 	}
 	.search
 	{
-		float: right;
+		
 		border-radius: 5px;
 		margin-top: 12px;
-		padding: 3px;
+		width: 202px;
+		height: 31px;
+		padding: 0px 30px 0px 2px;
+
+	}
+	.searchImage
+	{
+		
+		position: absolute;
+		background-image: url("../images/search_icon.png");
+		background-repeat: no-repeat;
+		width: 16px;
+		height: 16px;
+		right:10px;
+		top:20px;
+	}
+	.searchBox
+	{
+		float: right;
+		position: relative;
+
+	}
+	.searchBox ul a
+	{
+		margin:0px;
 	}
 	#banner
 	{
-		background-color: #000000;
+		background-color: #000;
+		color: #ffffff;
+
 	
+	}
+	.bannerText
+	{
+		position: absolute;
+		bottom: 10px;
+		left: 10px;
 	}
 	.banner_image
 	{
+		position: relative;
 		background-image: url("../images/banner.png");
 		background-repeat: no-repeat;
 		width: 1100px;
-		height: 100px;
+		height: 545px;
 
-			padding-top: 445px;
 	}
-	
 	#events
 	{
 		background-color: #ecab1f;
 		margin-bottom: 66px;
+		color: #222222;
 
 	}
-	.rectangles a
+	#events span
+	{
+		float: right;
+		padding-top: 15px;
+	}
+	.rectangles 
 	{	
 		float: left;
-		width: 215px;
-		height:45px;
+		width: 200px;
+		height:55px;
 		border-radius: 8px;
 		border: 2px solid #ffffff;
 		background-color: #ffffff;
 		color: black;
-		font-size: 25px;
+		font-size: 22px;
 		margin: 20px 15px 20px 0px;
-		font-weight: normal;
-		text-align: left;
-		padding-top: 15px;
+		line-height: 55px;
+		padding: 5px;
+
 	}
 	
 	#events ul
@@ -123,13 +176,18 @@
 	{
 		background-color: #ffffff;
 		font-family:Myriad Pro;
+		color: #ffffff;
 	}
-	#contents h1
+	#contents h2
 	{
 		float: left;
 		color: #888888;
 		font-size: 40px;
 		margin-bottom: 16px;
+	}
+	#contents h3
+	{
+		margin-bottom: 20px;
 	}
 	#events img
 	{
@@ -145,17 +203,22 @@
 	{
 		float: left;
 		list-style-type: none;
-		margin-right: 10px;
+		margin-left: 10px;
 		width:300px;
 		background-color: #4466ff;
 	
 	}
-	#contents img
+	#contents p
 	{
-		margin-bottom: 20px;
+		line-height: 16px;
+	}
+	#contents li:first-child
+	{
+		margin-left: 0px;
 	}
 	.imageContents
 	{
+		padding-top: 20px;;
 		padding-left: 10px;
 		padding-bottom: 25px;
 	}
@@ -165,51 +228,103 @@
 		margin-top: 71px;
 		padding-top: 29px;
 		font-weight: normal;
+		font-size: 14px;
 		color: #666666;
+		
+		box-shadow:1px -5px 14px #dadada; 
 	}
-
-	.things
+	.footerLists
 	{
 		float: left;
-		margin-right: 50px;
+		margin-left: 28px;
 	}
-	.things li
+	.footerLists h4
+	{
+		margin-bottom: 15px;
+		
+	}
+	.footerLists ul
+	{
+		margin-bottom: 27px;
+	}	
+	.footerLists li
+	{
+		width: 165px;
+	}
+	#footer div:first-child
+	{
+		margin-left: auto;
+	}
+	#footer li
 	{
 		list-style-type: none;
+		line-height: 20px;
 	}
-	.places
+	#footer a
+	{
+		color: #656;
+	}
+	#footer a:hover
+	{
+		color: #39b1ee;
+	}
+	.bottomlist li 
+	{
+		
+		width:165px;
+		
+	}
+	.bottomlist ul
 	{
 		float: left;
-		margin-right: 50px;
 	}
-	.places li
-	{
-		list-style-type: none;
-	}
-	.corporates
+	.bottomlist div
 	{
 		float: left;
-		margin-right: 50px;
+		margin-left: 28px;
 	}
-	.corporates li
+	
+	.footerBorder
 	{
-		list-style-type: none;
+		padding-bottom: 28px;
+		border-bottom:  1px solid #000;
+		margin-bottom: 20px;
 	}
-	.weddings
+	.footerNavigation
+	{
+		width: 550px;
+		margin: auto;
+		padding-bottom: 14px;
+	}
+	.footerNavigation li
 	{
 		float: left;
-		margin-right: 50px;
-	}
-	.weddings li
-	{
 		list-style-type: none;
+		border-left: 1px solid #aaaaaa;
 	}
-	.bookings
+	.footerNavigation ul
 	{
 		float: left;
-		margin-right: 50px;
+		
 	}
-	.bookings li
+	.footerNavigation a
 	{
-		list-style-type: none;
+		padding: 0px 8px 0px 8px;
+		color: #000;
+		
+	}
+	.footerNavigation li:first-child
+	{
+		border-left: none;
+	}
+	.copyright
+	{
+		margin: auto;
+		width: 260px;
+		font-size: 14px;
+		line-height: 20px;
+	}
+	a:hover
+	{
+		color: #39b1ee;
 	}
