@@ -1,0 +1,221 @@
+	 *
+ 	{
+		margin:0;
+		padding:0;
+	}
+	.wrapper
+	{
+		margin:auto;
+		width:940px;
+	}
+	#header
+	{
+		font-family:Myriad Pro;
+		background-color: #ffffff;
+		line-height: 18px;
+		font-size: 16px;
+
+	}	
+	.clear
+	{
+		clear:both;
+		float: none;
+
+	}
+	a.logo
+	{
+		float: left;
+		margin-right:66px;
+		margin-top: 6px;
+		background-image: url("../images/logo_ramoji.png");
+		background-repeat: no-repeat;
+		width: 140px;
+		height: 32px;
+	}
+	.navigation 
+	{
+		float: left;
+		list-style-type: none;
+		margin-top: 18px;
+		margin-bottom: 19px;
+	}
+	.navigation li
+	{
+		float: left;
+	}
+	#header a
+	{
+		display: block;
+		margin-right: 25px;
+		color: #000000;
+	}
+	.social
+	{
+		float: right;
+		list-style-type: none;
+		margin-left: 25px;
+		margin-top: 15px;
+	}
+	.social li 
+	{
+		float: right;
+		
+	}
+	a
+	{
+		text-decoration:none;
+		font-weight:bold;	
+	}
+	.search
+	{
+		float: right;
+		border-radius: 5px;
+		margin-top: 12px;
+		padding: 3px;
+	}
+	#banner
+	{
+		background-color: #000000;
+		
+	}
+	.banner_image
+	{
+		background-image: url("../images/banner.png");
+		background-repeat: no-repeat;
+		width: 1100px;
+		height: 545px;
+	}
+	#banner h1
+	{
+		float: left;
+		
+	}
+	.bannerText
+	{
+		float: left;
+		margin-top: 445px;
+	}
+	#events
+	{
+		background-color: #ecab1f;
+		margin-bottom: 66px;
+
+	}
+	.rectangles a
+	{	
+		float: left;
+		width: 215px;
+		height:60px;
+		border-radius: 8px;
+		border: 2px solid #ffffff;
+		background-color: #ffffff;
+		color: black;
+		font-size: 20px;
+		margin: 20px 5px;
+		font-weight: normal;
+		text-align: left;
+	}
+	
+	#events ul
+	{
+		float: left;
+	}
+	#events li
+	{
+		float: left;
+		list-style-type: none;
+	}
+	#contents
+	{
+		background-color: #ffffff;
+		font-family:Myriad Pro;
+	}
+	#contents h1
+	{
+		float: left;
+		color: #888888;
+		font-size: 40px;
+		margin-bottom: 16px;
+	}
+	#events img
+	{
+		float: right;
+		margin-top: 15px;
+		margin-left: 20px;
+	}
+	#contents ul
+	{
+		float: left;
+	}
+	#contents li
+	{
+		float: left;
+		list-style-type: none;
+		margin-right: 10px;
+		width:300px;
+		background-color: #4466ff;
+	
+	}
+	#contents img
+	{
+		margin-bottom: 20px;
+	}
+	.imageContents
+	{
+		padding-left: 10px;
+		padding-bottom: 25px;
+	}
+	#footer
+	{
+		background-color: #f1f1f1;
+		margin-top: 71px;
+		padding-top: 29px;
+		font-weight: normal;
+		color: #666666;
+	}
+
+	.things
+	{
+		float: left;
+		margin-right: 50px;
+	}
+	.things li
+	{
+		list-style-type: none;
+	}
+	.places
+	{
+		float: left;
+		margin-right: 50px;
+	}
+	.places li
+	{
+		list-style-type: none;
+	}
+	.corporates
+	{
+		float: left;
+		margin-right: 50px;
+	}
+	.corporates li
+	{
+		list-style-type: none;
+	}
+	.weddings
+	{
+		float: left;
+		margin-right: 50px;
+	}
+	.weddings li
+	{
+		list-style-type: none;
+	}
+	.bookings
+	{
+		float: left;
+		margin-right: 50px;
+	}
+	.bookings li
+	{
+		list-style-type: none;
+	}
