@@ -1,0 +1,305 @@
+*
+ 	{
+		margin:0;
+		padding:0;
+	}
+	.wrapper
+	{
+		margin:auto;
+		width:940px;
+	}
+	.clear,.shop li.clear,.navigation li.clear,#content li.clear,.footerNavigation li.clear,.footerTerms li.clear
+	{
+		clear:both;
+		float: none;
+		height:0px;
+		width:0px;
+		padding: 0px;
+		margin: 0px;
+	}
+	a
+	{
+		text-decoration: none;
+		color: #227744;
+	}
+	a:hover
+	{
+		color: #418bbd;
+	}
+	#header
+	{
+		background-color: #fff;
+		padding-top: 27px;
+		padding-bottom: 10px;
+		font-size: 16px;
+		font-family: arial;
+		box-shadow: 1px 2px 5px 0px #d9d9d9;
+	}
+	.logo
+	{
+		float: left;
+		background-image: url("../images/logo.png");
+		background-repeat: no-repeat;
+		height:59px;
+		width: 184px;
+		margin-right: 46px;
+	}
+	.navigation
+	{
+		float: left;
+		margin-top: 25px;
+		margin-bottom: 3px;
+		font-weight: bold;
+	}
+	ul.navigation
+	{
+		float: left;
+	}
+	.navigation li
+	{
+		float: left;
+		list-style-type: none;
+		margin-left: 44px;
+	}
+	.navigation li:first-child
+	{
+		margin-left: 0px;
+	}
+	#banner
+	{
+		font-size: 25px;
+		font-family: arial;
+		color: #227744;
+		padding-bottom: 27px;
+		border-bottom: 1px solid #ccc;
+	}
+	#banner h1
+	{
+		font-weight: normal;
+
+	}
+	.bannerImage
+	{
+		position: relative;
+		margin-bottom: 25px;
+	}
+	.bannertext	
+	{
+		position: absolute;
+		left: 37px;
+		top: 135px;
+		width: 456px;
+		line-height: 42px;
+	}
+	.button
+	{
+		font-weight: bold;
+		font-size:18px;
+		color:#ffffff;
+		position: absolute;
+		top: 184px;
+		left: 277px;
+		border-radius: 3px;
+		background-color: #1f6f40;
+		border:1px solid #155225;
+		box-shadow: inset 0px 1px 0px #388356;
+		width: 160px;
+		padding: 11px 0px 9px 36px;
+	}
+	.rectangle
+	{
+		float: left;
+	
+		position: relative;
+		font-size: 18px;
+		color: #636363;
+		border-radius: 3px;
+		border:1px solid #cccccc;
+		width: 407px;
+		padding: 16px 23px 17px 15px;
+	}
+	.rectangle img
+	{
+		float: right;
+	}
+	.rectangle p
+	{
+		margin-bottom: 7px;
+	}
+	.signupButton
+	{
+		position: absolute;
+		top: 107px;
+		left:186px;
+		font-size: 14px;
+		color: #636363;
+		border-radius: 3px;
+		background-color: #e0e0e0;
+		width: 76px;
+		padding: 10px 0px 9px 12px;
+		border-color: #d0d0cb;
+	}
+	.inputbox
+	{
+		line-height: 33px;
+		width: 157px;
+		border-color: #d0d0cb;
+		padding-right: 100px;
+		border: 1px solid #ccc;
+		border-radius: 3px;
+		box-shadow: none;
+	}
+	.shop li
+	{
+		float: left;
+
+		margin-left: 30px;
+		list-style-type: none;
+	}
+	.shop li:first-child
+	{
+		margin-left: 0px;
+	}
+	.shopbutton
+	{
+		font-weight: bold;
+		font-size:18px;
+		color:#ffffff;
+		
+		
+		border-radius: 3px;
+		background-color: #1f6f40;
+		border:1px solid #155225;
+		box-shadow: inset 0px 1px 0px #388356;
+		width: 160px;
+		padding: 11px 0px 9px 36px;
+	}
+	#content
+	{
+		padding-top: 92px;
+		color: #1d683c;
+		font-size: 16px;
+	}
+	#content h4
+	{
+		margin-bottom: 15px;
+		font-size: 16px;
+	}
+	#content li:first-child
+	{
+		margin-left: 0px;
+	}
+	#content li
+	{
+		float: left;
+		list-style-type: none;
+		width:275px;
+		margin-left: 30px;
+
+	}
+	#content ul
+	{
+		float: left;
+	}
+	.contentText
+	{
+		line-height: 22px;
+		font-size: 14px;
+		padding-top: 18px;
+	}
+	.contentText h5
+	{
+		line-height: 22px;
+		font-size: 12px;
+	}
+	#footer
+	{
+		border-top: 1px solid #e3e3e3;
+		margin-top: 94px;
+		padding-top: 38px;
+	}
+	.footerNavigation
+	{
+		line-height: 60px;
+		font-size: 14px;
+		color: #1d673b;
+		font-weight: bold;
+		float: left;
+	}
+	ul.footerNavigation
+	{
+		float: left;
+	}
+	.footerNavigation li
+	{
+		float: left;
+		list-style-type: none;
+		margin-left: 24px;
+		
+	}
+	.footerNavigation li:first-child
+	{
+		margin-left: 0px;
+	}
+	#footer p
+	{
+		float: left;
+		color: #b1b1b1;
+		margin-right: 61px;
+	}
+	ul.footerTerms
+	{
+			
+		float: left;
+	}
+	.footerTerms li
+	{
+		float: left;
+		list-style-type: none;
+	
+	}
+	
+	.border
+	{
+		border-left: 1px solid #bebebe;
+	}
+	.footerTerms li:first-child
+	{
+		border-left:none; 
+		margin-right: 0px;
+	}
+	.footerTerms a
+	{
+		padding: 0px 14px 0px 24px;
+		color: #a5a5a5;
+	}
+	.socialRectangle
+	{
+		border-radius: 5px;
+		background-color: #1d673b;
+		width: 33px;	
+	}
+	.social
+	{
+		float: right;
+	}
+	.social li
+	{
+		float: right;
+		list-style-type: none;
+		margin-left: 9px;
+	}
+	.social a
+	{
+		padding-top: 7px;
+		
+		display: block;
+	}
+	.social a:hover
+	{
+		background-color: #418bbd;
+	}
+	p.shopSpacing
+	{
+		margin-bottom: 24px;
+	}
