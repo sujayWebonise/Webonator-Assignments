@@ -8,7 +8,7 @@
 		margin:auto;
 		width:940px;
 	}
-	.clear,.shop li.clear,.navigation li.clear,#content li.clear,.footerNavigation li.clear,.footerTerms li.clear
+	.clear,.shop li.clear,.navigation li.clear,#content li.clear,.footerNavigation li.clear,.footerTerms li.clear, .social li.clear
 	{
 		clear:both;
 		float: none;
@@ -138,6 +138,7 @@
 		width: 76px;
 		padding: 10px 0px 9px 12px;
 		border-color: #d0d0cb;
+		
 	}
 	.inputbox
 	{
