@@ -9,7 +9,7 @@
 		width:940px;
 		position: relative;
 	}
-	.clear,.navigation li.clear,.bannerList li.clear
+	.clear,.navigation li.clear,.bannerList li.clear,.moveButtons li.clear
 	{
 		clear:both;
 		float: none;
@@ -93,7 +93,14 @@
 	{
 		background-color: #fff;
 	}
-	#banner p
+	.bannershadow
+	{
+		/*background: url("../images/banner_gredient.png") repeat-x;*/
+		box-shadow: inset 0px 2px 3px 1px #eaeaea;
+
+	
+	}
+	.heading
 	{
 		position: absolute;
 		top: 40px;
@@ -104,16 +111,127 @@
 	}
 	.bannerList	
 	{
-		width: 720px;
+		width: 792px;
 		margin: auto;
+		position: absolute;
+		top: 269px;
+		left: 73px;
+		z-index: 1;
 	}
 	.bannerList li
 	{
 		float: left;
 		list-style-type: none;
+		width:102px;
 		margin-left: 128px;
+		font-size: 14px;
 	}
-	.bannerList li:first-child
+	.bannerList p 
+	{
+		text-align: center;
+		font-style: italic;
+		width: 102px;
+	}
+	.bannerList ul li:first-child
 	{
 		margin-left: 0px;
+	}
+	.line
+	{
+		position: absolute;
+		top: 320px;
+		left: 100px;
+		width: 750px;
+		border-bottom:4px solid #000;
+		z-index: 0;
+	}
+	.bannerButtons
+	{
+		border-radius: 3px;
+		background-color: #ee7700;
+		line-height: 50px;
+		width: 200px;
+		text-align: center;
+		color: #fff;
+	}
+	ul.moveButtons
+	{
+		position: absolute;
+		top: 480px;
+		left: 220px;
+		width: 481px;
+	}
+	.moveButtons li
+	{
+		float: left;
+
+		list-style-type: none;
+		margin-left: 25px;
+	}
+	.moveButtons li:first-child
+	{
+		margin-left: 0px;
+	}
+	.moveButtons img
+	{
+		margin-right: 13px;
+	}
+	#content
+	{
+		margin-top: 185px;
+		border-top: 2px solid #e2e2e2;
+		padding-top: 94px;
+	}
+	.circle
+	{
+		border-radius: 25px;
+		width: 30px;
+		height: 30px;
+		color: #fff;
+		line-height: 30px;
+		text-align: center;
+		margin-top: 14px;
+		background-color: #bbbbbb;
+		font-style: italic;
+	}
+	.contentImage
+	{
+		background-image: url("../images/content_banner.jpg");
+		width: 780px;
+		height: 305px;
+		
+		
+	}
+	.leftArrow
+	{
+		float: left;
+		background-image: url("../images/arrowleft_icon.png");
+		background-repeat: no-repeat;
+		height: 50px;
+		width:26px;
+		margin-top: 128px;
+		margin-right: 54px;
+	}
+	.rightArrow
+	{
+		float: right;
+		background-image: url("../images/arrow.png");
+		background-repeat: no-repeat;
+		height: 50px;
+		width:26px;
+		margin-top: 128px;
+	}
+	.dots
+	{
+		margin-left: 440px;
+		margin-bottom: 67px;
+
+	}
+	#content h1
+	{
+		font-size: 36px;
+		text-align: center;
+		font-weight: normal;
+		color: #222222;
+		margin-bottom: 41px;
 	}
