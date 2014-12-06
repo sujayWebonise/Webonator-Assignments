@@ -7,7 +7,6 @@
 	{
 		margin:auto;
 		width:940px;
-		position: relative;
 	}
 	.clear,.shop li.clear,.navigation li.clear,#content li.clear,.footerNavigation li.clear,.footerTerms li.clear, .social li.clear
 	{
@@ -77,10 +76,11 @@
 	#banner h1
 	{
 		font-weight: normal;
-		float: left;
+
 	}
 	.bannerImage
 	{
+		position: relative;
 		margin-bottom: 25px;
 	}
 	.bannertext	
@@ -96,19 +96,15 @@
 		font-weight: bold;
 		font-size:18px;
 		color:#ffffff;
-		float: right;
-		/*position: absolute;
+		position: absolute;
 		top: 184px;
-		left: 277px;*/
+		left: 277px;
 		border-radius: 3px;
 		background-color: #1f6f40;
 		border:1px solid #155225;
 		box-shadow: inset 0px 1px 0px #388356;
-		width: 196px;
-		padding: 0px 0px 0px 0px;
-		line-height: 35px;
-		margin-top: 12px;
-		text-align: center;
+		width: 160px;
+		padding: 11px 0px 9px 36px;
 	}
 	.rectangle
 	{
@@ -119,7 +115,7 @@
 		color: #636363;
 		border-radius: 3px;
 		border:1px solid #cccccc;
-		width: 409px;
+		width: 407px;
 		padding: 16px 23px 17px 15px;
 	}
 	.rectangle img
@@ -133,18 +129,16 @@
 	.signupButton
 	{
 		position: absolute;
-		top: 108px;
-		left:198px;
+		top: 107px;
+		left:186px;
 		font-size: 14px;
 		color: #636363;
 		border-radius: 3px;
 		background-color: #e0e0e0;
 		width: 76px;
-		padding: 10px 0px 9px 0px;
+		padding: 10px 0px 9px 12px;
 		border-color: #d0d0cb;
-		border:none;
-		box-shadow: inset gray 0px -1px 6px;
-
+		
 	}
 	.inputbox
 	{
@@ -178,9 +172,8 @@
 		background-color: #1f6f40;
 		border:1px solid #155225;
 		box-shadow: inset 0px 1px 0px #388356;
-		width: 210px;
-		line-height: 38px;
-		text-align: center;
+		width: 160px;
+		padding: 11px 0px 9px 36px;
 	}
 	#content
 	{
@@ -193,7 +186,10 @@
 		margin-bottom: 15px;
 		font-size: 16px;
 	}
-	
+	#content li:first-child
+	{
+		margin-left: 0px;
+	}
 	#content li
 	{
 		float: left;
@@ -251,7 +247,7 @@
 	{
 		float: left;
 		color: #b1b1b1;
-		margin-right: 37px;
+		margin-right: 61px;
 	}
 	ul.footerTerms
 	{
@@ -279,10 +275,6 @@
 		padding: 0px 14px 0px 24px;
 		color: #a5a5a5;
 	}
-	.footerTerms a:hover
-	{
-		color: #418bbd;
-	}
 	.socialRectangle
 	{
 		border-radius: 5px;
@@ -302,7 +294,7 @@
 	.social a
 	{
 		padding-top: 7px;
-		border-radius: 5px;
+		
 		display: block;
 	}
 	.social a:hover
