@@ -9,7 +9,7 @@
 		width:940px;
 		position: relative;
 	}
-	.clear,.navigation li.clear,.bannerList li.clear,.moveButtons li.clear
+	.clear,.navigation li.clear,.bannerList li.clear,.moveButtons li.clear,.contentList li.clear,.walkthrough li.clear
 	{
 		clear:both;
 		float: none;
@@ -73,6 +73,8 @@
 		border-radius: 4px;
 		margin-left: 20px;
 		margin-top: 8px;
+		text-align: center;
+
 	}
 	#header p
 	{
@@ -181,6 +183,8 @@
 		margin-top: 185px;
 		border-top: 2px solid #e2e2e2;
 		padding-top: 94px;
+		background-color:#f5f5f5;
+		padding-bottom:298px;
 	}
 	.circle
 	{
@@ -233,5 +237,110 @@
 		text-align: center;
 		font-weight: normal;
 		color: #222222;
+		margin-bottom: 37px;
+
+	}
+	ul.contentList
+	{
+		
+		width:870px;
+		margin:auto;
+		margin-bottom:50px;
+	}
+	.contentList li
+	{
+		float:left;
+		list-style-type:none;
+		width:215px;
+		text-align:center;
+		border-left: 1px solid #cdcdcd;
+		
+	}
+	.contentList img
+	{
+		margin-bottom:25px;
+	}
+	.contentList li:first-child img
+	{
 		margin-bottom: 41px;
+
+	}
+	.contentList li:first-child
+	{
+		border-left:none;
+	}
+	.walkthrough li
+	{
+		float:left;
+		list-style-type:none;
+	}
+	div.walkthrough
+	{
+		position:absolute;
+		top:660px;
+		left:80px;
+		width:711px;
+		background-color:#fff;
+		padding:40px 0px 52px 50px;
+	}
+	.inputbox
+	{
+		width:300px;
+		margin-right:20px;
+		border:ghostwhite;
+		box-shadow:0px 1px 0px 1px #bbbbbb;
+		margin-bottom:41px;
+		color: #bbbbbb;
+
+	}
+
+	.walkthrough ul
+	{
+		width:720px;
+		
+	}
+	.walkthrough p
+	{
+		text-align:center;
+		font-size:25px;
+		font-weight:normal;
+		margin-bottom:47px;
+		color: #959595;
+	}
+	.submit
+	{
+		background-color:#88bc36;
+		border:none;
+		width:74px;
+		line-height:29px;
+		color:white;
+		border-radius:5px;
+	}
+	#footer
+	{
+		background-color:#444444;
+		padding-top:62px;
+		padding-bottom:50px;
+	}
+	#footer p
+	{
+		text-align:center;
+		color:#888888;
+		
+	}
+	#content h3
+	{
+		position: absolute;
+		top: 243px;
+		left: 620px;
+		font-style: italic;
+		font-size: 24px;
+	}
+	#content h4
+	{
+		position: absolute;
+		top: 274px;
+		left: 510px;
+		color: #b0b0b0;
+		font-size: 20px;
 	}
